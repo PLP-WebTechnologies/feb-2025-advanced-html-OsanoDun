@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML Assignment</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+        }
+        form {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Ordered list with Roman numerals -->
+    <h2>Ordered List</h2>
+    <ol type="I">
+        <li>Apple</li>
+        <li>Meta</li>
+        <li>Google</li>
+        <li>X</li>
+        <li>Openai</li>
+    </ol>
+
+    <!-- External Image from Pexels -->
+    <h2>External Image</h2>
+    <img src="https://images.pexels.com/photos/1684187/pexels-photo-1684187.jpeg" alt="Color Festival" width="500">
+
+    <!-- Table of 5 contacts -->
+    <h2>Plp Contacts Table</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>123 Elm Street</td>
+                <td>+1234567890</td>
+                <td>john@plp.org</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>456 Oak Avenue</td>
+                <td>+0987654321</td>
+                <td>jane@plp.org</td>
+            </tr>
+            <tr>
+                <td>Bob Johnson</td>
+                <td>789 Pine Road</td>
+                <td>+1122334455</td>
+                <td>bob@plp.org</td>
+            </tr>
+            <tr>
+                <td>Alice Brown</td>
+                <td>321 Maple Lane</td>
+                <td>+5566778899</td>
+                <td>alice@plp.org</td>
+            </tr>
+            <tr>
+                <td>Charlie Green</td>
+                <td>654 Birch Boulevard</td>
+                <td>+6677889900</td>
+                <td>charlie@plp.org</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Registration Form -->
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+
+        <!-- Name Field -->
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+        <!-- Email Field -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+        <!-- Password Field -->
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="8"><br><br>
+
+        <!-- Date Field -->
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <!-- Dropdown Field -->
+        <label for="country">Country:</label><br>
+        <select id="country" name="country" required>
+            <option value="">Select your country</option>
+            <option value="South Africa">South Africa</option>
+            <option value="Kenya">Kenya</option>
+            <option value="Tanzania">Tanzania</option>
+            <option value="Nigeria">Nigeria</option>
+            <option value="Rwanda">Rwanda</option>
+            <option value="Uganda">Uganda</option>
+        </select><br><br>
+
+        <!-- Radio Buttons -->
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+
+        <!-- Checkboxes -->
+        <label>Interests:</label><br>
+        <input type="checkbox" id="sports" name="interests" value="sports">
+        <label for="sports">Sports</label>
+        <input type="checkbox" id="music" name="interests" value="music">
+        <label for="music">Music</label>
+        <input type="checkbox" id="Movies & Series" name="interests" value="Movies & Series"
+        <label for="Movies & Series">Movies & Series</label>
+        <input type="checkbox" id="travel" name="interests" value="travel">
+        <label for="travel">Travel</label><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Register">
+
+    </form>
+
+</body>
+</html>
